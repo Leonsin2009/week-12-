@@ -59,3 +59,29 @@ list_of_fruits.extend(["guava", "watermelon"])
 print(list_of_fruits)
 list_of_fruits.reverse()
 print(list_of_fruits)
+#popping items from the list
+popped_item = list_of_fruits.pop()
+# Removes and returns the last item
+print(popped_item)  #date
+print(list_of_fruits)
+#inserting items at a specific index
+list_of_fruits.insert(1, "blueberry")
+print(list_of_fruits)
+#removing a specific item by value
+list_of_fruits.remove("banana")
+print(list_of_fruits)
+
+list_of_fruits.insert(3, "mango")
+print(list_of_fruits)
+
+list_of_fruits.sort()   # sort the list in ascending order
+print(list_of_fruits)
+# Why use lists? instead of individual variables
+# imagine you have 100 items to manage
+list_of_items = list(range(1, 1001)) # creates a list of numbers
+print(list_of_items)
+print(len(list_of_items))   # 1000
+list_of_items.pop()
+print(list_of_items)
+list_of_items.extend(range(1001, 2001))
+print(list_of_items)
