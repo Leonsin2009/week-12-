@@ -34,3 +34,28 @@ print(numbers)
 # Reverse your list using .reverse().
 
 # Create a list of 3 lists (matrix), and access the middle element.
+
+
+# Collections aare usedd to storee multiple items in a single variable
+# Lists are ordered collections of items
+# Lists are mutable, meaning you can change their contents
+# Lists are created using square brackets[]
+list_of_fruits = ["apple", "banana", "cherry", "date"]
+print(list_of_fruits) # ['apple', 'banana', 'cherry', 'date']
+print(type(list_of_fruits)) # <class 'list'>
+print(list_of_fruits[0])    # apple
+print(list_of_fruits[1])    # banana
+print(list_of_fruits[-1])   # date
+print(list_of_fruits[1:3])  #['banana', 'cherry']
+# Reversing a list
+list_of_fruits.reverse()
+print(list_of_fruits)       # ['date', 'cherry', 'banana', 'apple']
+print(list_of_fruits[::-1]) # ['apple', 'banana', 'cherry', 'date']
+# Appending items to a list
+list_of_fruits.append("elderberry") #add items to the end of the list
+print(list_of_fruits)
+list_of_fruits.extend(["guava", "watermelon"])   
+#add multiple items to the end of the list
+print(list_of_fruits)
+list_of_fruits.reverse()
+print(list_of_fruits)
