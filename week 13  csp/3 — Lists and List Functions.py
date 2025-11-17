@@ -85,3 +85,46 @@ list_of_items.pop()
 print(list_of_items)
 list_of_items.extend(range(1001, 2001))
 print(list_of_items)
+
+
+# Why use a list
+# instead of creating separate variables
+# for each item we can store them in a list
+# this makes our job easier
+# this makes managing complexity of our code easier
+# when we need to manage multiple items
+# performance task answer
+
+
+# sets and tuples
+# sets and tuples are also part og the collections
+# family in Pythons
+# sets examples:
+set1 = {1, 2, 3, 4, 5}
+set2 = {"apple", "banana", "cherry"}
+print(set1) # {1, 2, 3, 4, 5}
+print(set2) # {'apple', 'banana', 'cherry'}
+print(type(set1))   # <class 'set>
+# Why use sets instead of lists?
+# Sets automatically handle duplucate items
+# examples:
+set_with_duplicates = {1, 2, 2, 3, 4, 4, 5}
+print(set_with_duplicates) # {1, 2, 3, 4, 5}
+# sets are useful for membership testing
+print(3 in set1)    # True
+print(6 in set1)    # Flase
+
+
+# Tuples examples:
+tuple1 = (1, 2, 3, 4, 5)
+tuple2 = ("apple", "banana", "cherry")
+print(tuple1)   # (1, 2, 3, 4, 5)
+print(tuple2)   # ("apple", "banana", "cherry")
+print(type(tuple1)) # <class 'tuple'>
+# why use tuples instead of lists?
+# tuples are immutable, meaning they
+# cannot be changed after creation
+# this makes tuples useful
+# for storing data that should not be modified
+#examples:
+social_security_number = (123444, 4444445, 5676789)
